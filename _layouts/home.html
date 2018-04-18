@@ -1,0 +1,21 @@
+---
+layout: default
+carousel:
+  - slide-1.png
+  - slide-2.png
+---
+<div class="container">
+    <div class="inner">
+        <header>
+            <h1>Welcome to {{ page.title | default: site.title }}</h1>
+            <h2>{{ page.description | default: site.description }}</h2>
+        </header>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        {% include carousel.html %}
+    </div>
+</div>
+
+{{ content }}
