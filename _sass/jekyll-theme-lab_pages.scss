@@ -49,6 +49,42 @@ table {
 	border-collapse: collapse;
 }
 
+/* NAV STYLES */
+nav {
+    overflow: hidden;
+    background: #e9e9e9;
+    border: 2px solid #e1e1e1;
+    min-height: 30px;
+}
+nav .navbar .navbar-default .navbar-static-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    line-height: 38px;
+}
+nav .navbar a {
+    text-align: center;
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+nav li {
+    display: inline;
+    float: left;
+    padding: 14px 16px;
+}
+nav li a {
+    color: #3f3f3f;
+    font-weight: bold;
+}
+nav li a:hover,
+nav li a:focus {
+    color: #000;
+}
+nav li.active a {
+    color: #000;
+}
+
 /* LAYOUT STYLES */
 body {
   font-family: Lato, 'Helvetica Neue', Helvetica, Arial, serif;
@@ -56,7 +92,6 @@ body {
   line-height: 1.5;
   color: #6d6d6d;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-  background: transparent url(../images/body-bg.png) 10% 0 repeat;
 }
 
 a {
@@ -89,7 +124,7 @@ header h2 {
 
 #container {
   min-height: 595px;
-  /*background: transparent url(../images/highlight-bg.jpg) 10% 0 no-repeat;*/
+  padding-top: 10px;
 }
 
 .inner {
@@ -319,7 +354,28 @@ footer a {
 footer a:hover {
   color: #444;
 }
+/* CAROUSEL */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+  margin: 0 auto;
+}
 
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #ccc \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #666;
+  border-radius: 10px;
+}
 /* MISC */
 .clearfix:after {
   display: block;
