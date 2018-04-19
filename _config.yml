@@ -19,9 +19,20 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new lab website here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  labgithub
+webmaster: Web McMaster
+
+# Lab contact info
+pi_name: Your Principal Investigator name
+pi_email: pi_email@example.com
+pi_phone: (555) 555-5555
+pi_fax: (555) 555-0000
+
+lab_address: 1 Fancy Building, Big Research Institution, College Town, USA 00000
+lab_phone: (555) 555-5151
+lab_fax: (555) 555-5000
 
 # Build settings
 markdown: kramdown
