@@ -1,0 +1,6 @@
+- name: Affiliated Institution
+  link: http://affiliatedwebsite.edu
+  img: "../assets/images/logo.png"
+  
+- name: Affiliated Grad Program
+  link: http://grad-program.university.edu/
