@@ -12,8 +12,8 @@
 {% seo %}
   </head>
   
-  <nav class="navbar navbar-default navbar-static-top" role="navigation">
-        <ul class="nav navbar-nav">
+  <nav class="navbar" role="navigation">
+        <ul class="navbar-nav">
             {% assign links = site.data.navigation %}
             {% for link in links %}
                 {% assign class = nil %}
@@ -52,9 +52,6 @@
         </section>
 
         <footer>
-        {% if site.github.is_project_page %}
-          {{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
-        {% endif %}
           This page was generated with the <a href="https://github.com/isacofflab/lab_pages">lab_pages</a> Jekyll theme.
         </footer>
 
