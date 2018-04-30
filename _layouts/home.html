@@ -18,14 +18,18 @@ carousel:
     </div>
 </div>
 
+<div class="spacer"></div>
+<div class="spacer"></div>
+
 <h1>News</h1>
 {% assign sorted = site.data.news | sort: 'date' | reverse %}
-{% for entry in sorted limit:5 %}
-    <div>
+<div class="row">
+{% for entry in sorted limit:4 %}
+    <div class="col-md-3">
         <h3>{{ entry.date }}</h3>
-        <p>{{ entry.description}}</p>
+        <p style="word-wrap: break-word;">{{ entry.description}}</p>
     </div>
 {% endfor %}
-
+</div>
 
 {{ content }}
