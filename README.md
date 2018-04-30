@@ -6,6 +6,18 @@ To experiment with this code, add some sample content and run `bundle exec jekyl
 
 ## Installation
 
+### Easy way
+1. Clone this repo and `cd` into it. 
+2. Change the contents of `_data/*.yml` and `_config.yml` to your info
+3. Run `jekyll serve` to serve the site
+
+### Alternative way
+1. Create a directory for your site and `cd` into it.
+2. Run `jekyll new` to create a new site
+3. In the Gemfile change the `gem "minima"` line to `gem "lab_pages"`
+4. Install the theme with `bundle install`
+5. Change your `_config.yml` theme to `theme: lab_pages`
+6. Run `jekyll serve`
 
 ## Usage
 
