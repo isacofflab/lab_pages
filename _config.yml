@@ -30,7 +30,11 @@ pi_email: pi_email@example.com
 pi_phone: (555) 555-5555
 pi_fax: (555) 555-0000
 
-lab_address: 1 Fancy Building, Big Research Institution, College Town, USA 00000
+lab_address: 1 Fancy Building
+lab_city: College Town
+lab_state: CA
+lab_country: United States
+lab_zipcode: 00000
 lab_phone: (555) 555-5151
 lab_fax: (555) 555-5000
 
