@@ -1,0 +1,34 @@
+---
+layout: default
+title: Resources
+---
+<h1>{{ page.title }}</h1>
+<div class="spacer"></div>
+<h2>Affiliations</h2>
+{% for affiliate in site.data.affiliations %}
+    {% cycle 'add rows': '<div class="row">', '', '' %}
+		<div class="col-md-4" style="min-height: 30px;">
+            {% if affiliate.img %}
+            <a href="{{ affiliate.link }}">
+                <img width=200 src="{{ affiliate.img }}">
+            </a>
+            {% else %}
+            <a href="{{ affiliate.link }}">{{ affiliate.name }}</a>
+            {% endif %}
+        </div>
+    {% cycle 'close rows': '', '', '</div>' %}
+{% endfor %}
+{% cycle 'close rows': '', '</div>', '</div>' %}
+<div class="spacer"></div>
+
+
+<h2>Lab Resources</h2>
+{% for resource in site.data.resources %}
+    {% cycle 'add rows': '<div class="row">', '', '' %}
+    <div class="col-md-4" style="min-height: 30px;">
+        <a href="{{ resource.link }}">{{ resource.name }}</a>
+    </div>
+    {% cycle 'close rows': '', '', '</div>' %}
+{% endfor %}
+{% cycle 'close rows': '', '</div>', '</div>' %}
+<div class="spacer"></div>
