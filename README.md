@@ -1,41 +1,33 @@
 # lab_pages
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+Welcome to the lab_pages Jekyll theme. This theme is designed for academic laboratory pages with multiple team members, projects, and publications to document.
 
 To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
 
-TODO: Delete this and the text above, and describe your gem
-
-
 ## Installation
 
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "lab_pages"
-```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: lab_pages
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install lab_pages
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+### _config.yml
+
+Add information about website, webmaster, lab location, and PI contact info in _config.yml. Some information (e.g. `pi_fax` and `lab_fax`) are optional, but PI name, PI email, lab address and city are required. 
+
+### Layouts
+
+There are three layouts with this theme: a homepage (`home`), a default page (`default`), and a papers page (`papers`). A table of papers will be displayed in /papers/index.html and the content will be determined by the .md files in (`/papers/_posts/`). 
+
+### Papers
+
+Each .md file should begin with a date (formatted as `%YYYY-%mm-%dd`) followed by a string. The front matter of each post in `papers/_posts/` should contain the authors names, the paper title, an abbreviated citation, a DOI, and the journal name. The abstract of the paper should be included in the main content. Images can be included in these posts by placing the relevant image in the `/assets/images/` directory and pasting the path in the `-img:` field of the front matter.
+
+### Carousel
+
+The .html file for the homepage carousel is in `_includes/`. Images for the carousel live in the `assets/images/carousel/` directory.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/isacofflab/lab_pages. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
