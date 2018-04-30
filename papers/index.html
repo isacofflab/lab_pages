@@ -1,0 +1,22 @@
+---
+layout: default
+title: Papers
+categories: 
+ - papers
+---
+
+{% for paper in site.categories.papers %}
+    {% cycle 'add rows': '<div class="row">', nil, nil %}
+		<div class="col-md-4" style="min-height: 140px;">
+            <a href="{{ paper.url }}">
+                <img width=100 src="{{ paper.image }}">
+            </a>
+            <div>
+                <a href="{{ paper.url }}">{{ paper.title }}</a>
+                <p>{{ paper.ref }}</p>
+            </div>
+        </div>
+    {% cycle 'close rows': nil, nil, '</div>' %}
+{% endfor %}
+{% cycle 'close rows': nil, '</div>', '</div>' %}
+<div class="spacer"></div>
