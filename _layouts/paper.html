@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="row">
+    <div class="col-md-12">
+        {% if page.image %}
+        <img src="{{ page.image }}">
+        {% endif %}
+        <div>
+            <h2>{{ page.title }}</h2>
+        </div>
+        <p>
+            <div>
+                {{ page.authors }} {{ page.year }}, {{ page.journal}}
+            </div>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        {% if page.doi %}
+        <i class="fa fa-external-link fa-fw"></i>
+        <a href="http://dx.doi.org/{{ page.doi }}">{{ page. doi }}</a>
+        {% endif %}
+    </div>
+</div>
+
+{{ content }}
