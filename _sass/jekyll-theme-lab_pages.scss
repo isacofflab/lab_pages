@@ -1,6 +1,6 @@
 @import "bootstrap";
 @import "rouge-base16-dark";
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -123,12 +123,12 @@ header h2 {
 }
 
 .container {
-  min-height: 595px;
+  min-width: 95%;
   padding-top: 10px;
 }
 
 .inner {
-  width: 620px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -383,7 +383,7 @@ footer a:hover {
 /* PROJECT IMAGES */
 .project img {
     display: block;
-    max-width: 600px;
+    min-width: 60%;
     height: auto;
 }
 
@@ -395,6 +395,8 @@ footer a:hover {
   height: auto;
   margin: auto auto;
 }
+
+
 .carousel-indicators li {
   display: inline-block;
   width: 10px;
@@ -408,12 +410,17 @@ footer a:hover {
   border-radius: 10px;
 }
 #carousel_container {
-    max-height: 400px;
+    max-height: 100%;
     height: auto;
     padding: 10px;
+    max-width:85%;
 }
 
+
 /* MISC */
+.spacer{
+    height: 10px;
+}
 .clearfix:after {
   display: block;
   height: 0;
@@ -432,20 +439,28 @@ footer a:hover {
 /* Smaller than standard 960 (devices and browsers) */
 @media (min-width: 768px){
   .container{
-    max-width:100%;
+    max-width:95%;
   }  
 }
 
 @media (min-width: 992px){
   .container{
-    max-width:100%;
+    max-width:95%;
   }
 }
 
-@media only screen and (max-width: 959px) { }
+@media only screen and (max-width: 959px) { 
+    .container{
+        max-width:95%;
+    }
+}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) { }
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container{
+        max-width:95%;
+    }
+}
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
@@ -460,13 +475,32 @@ footer a:hover {
     display: none;
   }
   .inner {
-    width: 94%;
+    width: 90%;
     margin: 0 auto;
+  }
+  .container{
+        max-width:95%;
   }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) { }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .container{
+        max-width:95%;
+  }
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) { }
+@media only screen and (max-width: 479px) { 
+  .inner {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .container{
+        max-width:90%;
+  }
+}
